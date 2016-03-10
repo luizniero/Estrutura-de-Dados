@@ -21,7 +21,7 @@
         
     3) Função PUSH
     
-     int push (int valor) {
+     	int push (int valor) {
             celula *nova_celula = (celula*)malloc(sizeof(celula));
 	        if (nova_celula == null)
 	        	return 0;
@@ -31,4 +31,20 @@
 	        	topo = nova_celula;
 	            return 1;
 	        }
-    }
+	}
+	
+
+4) Função POP
+	
+	int pop {
+		celula *temp;
+		if (pilha_vazia())
+			return 0;
+		else {
+			temp = topo;
+			topo = topo -> prox;
+			temp -> prox = null;
+			free(temp);
+			return 1;	
+		}
+	}   
