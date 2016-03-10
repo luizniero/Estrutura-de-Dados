@@ -1,0 +1,2 @@
+4. Faça uma função para verificar se a expressão matemática, por exemplo uma entrada como (A + {B*C} – [D-A]). 
+Ignore as variáveis da equação e utilize uma pilha dinâmica para resolver o problema.
