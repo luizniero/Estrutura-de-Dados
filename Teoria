@@ -1,0 +1,34 @@
+# Estrutura-de-Dados
+
+  PILHA DINÂMICA
+
+    1) Declarações Iniciais
+        
+        struct celula {
+            int item;
+            celula *prox;
+        }
+        celula *topo = null;
+        
+    2) Função Pilha Vazia
+    
+        int pilha_vazia {
+            if (topo == null)
+                return 1;
+            else
+                return 0;
+        }
+        
+    3) Função PUSH
+    
+     int push (int valor) {
+            celula *nova_celula = (celula*)malloc(sizeof(celula));
+	        if (nova_celula == null)
+	        	return 0;
+        	else {
+        		nova_celula -> item = valor;
+	        	nova_celula -> prox = topo;
+	        	topo = nova_celula;
+	            return 1;
+	        }
+    }
